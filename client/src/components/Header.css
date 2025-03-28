@@ -1,0 +1,10 @@
+.header {
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.userIU{
+    display: flex;
+}

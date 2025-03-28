@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>график</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id="graph"></div>
+    <script>
+        const points = encodeURIComponent("{{points}}")
+        // // Запрос на сервер для получения данных графика
+        fetch(`https://penalty-method-solution.onrender.com/plot-data?x1_min=-5&x1_max=5&x2_min=-5&x2_max=5&expression={{expression}}&constraint_expr1={{ constraint_expr1 }}&constraint_type1={{ constraint_type1 }}&constraint_value1={{ constraint_value1 }}&constraint_expr2={{ constraint_expr2 }}&constraint_type2={{ constraint_type2 }}&constraint_value2={{ constraint_value2 }}&epsilon={{epsilon}}&x1_initial={{x1_initial}}&x2_initial={{x2_initial}}&method={{method}}&points=${points}`)
+        .then(response => response.json())
+        .then(data => {
+            console.log("test")
+            const graphData = JSON.parse(data);
+            Plotly.newPlot('graph', graphData.data, graphData.layout);
+        });
+    </script>
+</body>
+</html>
