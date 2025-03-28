@@ -50,5 +50,4 @@
 
 Вот несколько скриншотов интерфейса проекта:
 
-   ![Главный экран проекта](![image](https://github.com/user-attachments/assets/12d13b24-6ee0-43dc-ac86-01df6382fafa)
-/screen1.png)
+  ![Страница решения](screenshots/Страница решения.png)
