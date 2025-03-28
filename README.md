@@ -4,7 +4,8 @@
 
 ## Ссылка на проект
 
-Проект доступен по следующей ссылке: [Ссылка на проект](https://penalty-factor-client.vercel.app/).
+Проект доступен по следующей ссылке: <a href="https://penalty-factor-client.vercel.app/" target="_blank">Ссылка на проект</a>.
+
 
 ## Для чего создавался проект
 
